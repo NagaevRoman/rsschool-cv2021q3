@@ -6,7 +6,7 @@
 ##  My photo
 ----
 
-![My photo](https://sun9-30.userapi.com/impg/q9uPCgc46KQ6SvvPOjKXCYpUbz9Ma_VlNxGlHw/2clTjNWuJOo.jpg?size=2560x1920&quality=95&sign=040013142a080bb2ed058bd1cd5b3051&type=album)
+![My photo](https://sun9-30.userapi.com/s/v1/ig2/ipDoJwO0o6yFY7TET4Go_Y0s991tEKc4BmvxcSObeRlzYu2RO1mCEIWo9Or24FKPRLm0KNypZYkYaoGmK0qtgnyV.jpg?size=200x200&quality=95&crop=764,572,1125,1129&ava=1)
 
 
 
