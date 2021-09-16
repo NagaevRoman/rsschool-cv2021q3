@@ -39,7 +39,7 @@ Specialities  Industrial Electronics
 Udemy
 JavaScript 2021 - Full Zero to Profi Guide (In process..)
 
-## Skils
+## Skills
 ----
   * HTML
   * CSS
