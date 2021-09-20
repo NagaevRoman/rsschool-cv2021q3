@@ -1,1 +1,1 @@
-https://github.com/NagaevRoman/rsschool-cv.git
+https://github.com/NagaevRoman/rsschool-cv/
