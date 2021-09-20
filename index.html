@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Nagaev Roman</title>
+  
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+      <header>
+        <img src="./images/Portrait.jpg" alt="Photo" width="204" height="204" class="face">
+        <h1>Nagaev Roman</h1>
+      </header>
+    <div class="two-cards">
+      <main>
+      <section class="about-myself">
+        <div class="sub-header">
+          <h3>About Myself</h3>
+        </div>
+        <p> I am a supportive team-player, passionate about resolving issues. Seeking a position to gain knowledge and experience in front-end development and implement them in various future projects.</p>
+      </section>
+      <section class="education">
+        <div class="sub-header">
+            <h3>Education</h3>
+        </div>
+        <p><strong>Polotsk State University</strong></p>
+        <p>The Faculty of Computer Science and Electronics</p>
+        <p>Specialities:  Industrial Electronics</p>
+        <p>Years: 2013 - 2017</p>
+      </section>
+      <section class="courses">
+        <div class="sub-header">
+            <h3>Courses</h3>
+        </div>
+        <ul>
+          <li>JavaScript Manual on learnjavascript.ru</li>
+          <li>Udemy: JavaScript 2021 - Full Zero to Profi Guide (In process..)</li>
+          <li>HTML and CSS Tutorials</li>
+        </ul>
+      </section>
+      <section class="code-example">
+        <div class="sub-header">
+              <h3>Code example</h3>
+        </div>
+        <p><strong>Test task from Wargaming forge</strong></p>
+          <details>
+            <summary>Code:</summary>    
+            <pre><code>function roundOne(teams){
+  let rounds = 0;
+  let modOfTeams = +teams % 2;
+  let teamsLeft = +teams;
+  while(modOfTeams === 0 && teamsLeft > 1){
+      teamsLeft /= 2;
+      rounds += teamsLeft;
+      modOfTeams = teamsLeft % 2;
+  }
+    if (teamsLeft === 1) {
+      return map.push(rounds);
+    }else{
+      return map.push(Math.floor
+      (rounds + roundTwo(teamsLeft)));
+    }
+    }
+    
+    function roundTwo(teams){
+      return fact(+teams)/
+      (fact(2)*fact(+teams - 2));
+    }
+
+    function fact(n){
+    let result = 1;
+    for(var i = 1; i <= n; i++){
+        result = result*i;
+    }
+    return Math.floor(result);
+    }  
+
+    for (let i = 1; i <= 8000; i++) {
+      roundOne(i);
+}</code></pre>
+          </details>        
+      </section>
+    </main>
+      <aside>
+        <div class="content">
+          <section class="contacts">
+            <h3>Contacts</h3>
+            <ul>
+              <li>
+                <img src="./icons/phone.svg" alt="Phone Icon" width="30" height="30">
+                <a href="tel:+375333365798">+375(33)336-57-98</a>
+              </li>
+              <li>
+                <img src="./icons/mail.svg" alt="Email Icon" width="30" height="30">
+                <a target="_blank" href="mailto:nahagaevroman@gmail.com">Mail</a>
+              </li>
+              <li>
+                <img src="./icons/telegram.svg" alt="Telegram Icon" width="30" height="30">
+                <a target="_blank" href="//t.me/NagaevRoman">Telegram</a>
+              </li>
+              <li>
+                <img src="./icons/vkontakte.svg" alt="Discord Icon" width="30" height="30">
+                <a target="_blank" href="//vk.com/id52721304">VK</a>
+              </li>
+              <li>
+                <img src="./icons/Tlinkedin.svg" alt="LinkedIn Icon" width="30" height="30">
+                <a  target="_blank" href="//www.linkedin.com/in/roman-nagaev-16a583221/">LinkedIn</a>
+              </li>
+            </ul>
+          </section>
+          <section class="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML5, CSS3</li>
+              <li>JavaScript Basics</li>
+              <li>Git, GitHub</li>
+              <li>VS Code</li>
+            </ul>
+          </section>
+          <section class="languages">
+            <h3>Languages</h3>
+            <ul>
+              <li>
+                <p class="language-name">English</p>
+                <p>Pre-intermediate</p>
+              </li>
+              <li>
+                <p class="language-name">Russian</p>
+                <p>Native</p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+      </div>
+    <footer>
+      <a target="_blank" class="my-github" href="//github.com/NagaevRoman">
+        <img class="github-icon" src="./icons/github.svg" alt="Github Icon" width="26" height="26">
+        <p>My GitHub</p>
+      </a>
+      <a target="_blank" class="my-youtube" href="//youtube.com/channel/UCroXe9axCKSGQKcwfhXVVVQ">
+        <img class="youtube-icon" src="./icons/youtube.svg" alt="Github Icon" width="26" height="26">
+        <p>My Youtube</p>
+      </a>
+      <a target="_blank" href="//rs.school/js/">
+        <img src="./icons/logo-rsschool3.png" alt="Rsschool Icon" width="73" height="26">
+      </a>
+      <p>© 2021</p>
+    </footer>
+  </div>
+</body>
+</html>
