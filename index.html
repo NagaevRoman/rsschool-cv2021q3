@@ -11,19 +11,26 @@
 </head>
 <body>
     <div class="wrapper">
+      <header>
+        <img src="./images/Portrait.jpg" alt="Photo" width="204" height="204" class="face">
+        <h1>Nagaev Roman</h1>
+      </header>
     <div class="two-cards">
-      <div class="left-card">
+      <main>
       <section class="about-myself">
         <div class="sub-header">
           <h3>About Myself</h3>
         </div>
-       
+        <p> I am a supportive team-player, passionate about resolving issues. Seeking a position to gain knowledge and experience in front-end development and implement them in various future projects.</p>
       </section>
       <section class="education">
         <div class="sub-header">
             <h3>Education</h3>
         </div>
-        <p></p>
+        <p><strong>Polotsk State University</strong></p>
+        <p>The Faculty of Computer Science and Electronics</p>
+        <p>Specialities:  Industrial Electronics</p>
+        <p>Years: 2013 - 2017</p>
       </section>
       <section class="courses">
         <div class="sub-header">
@@ -39,75 +46,69 @@
         <div class="sub-header">
               <h3>Code example</h3>
         </div>
-        <p><strong>Test Wargaming forge</strong> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex id temporibus ut maiores alias numquam non, expedita voluptatem quo aliquam eveniet cupiditate dolor consectetur quam tempora tenetur? Fuga, quasi facilis?</p>
-        <pre>
-          <code>
-            function solve(input) {
+        <p><strong>Test task from Wargaming forge</strong></p>
+          <details>
+            <summary>Code:</summary>    
+            <pre><code>function roundOne(teams){
+  let rounds = 0;
+  let modOfTeams = +teams % 2;
+  let teamsLeft = +teams;
+  while(modOfTeams === 0 && teamsLeft > 1){
+      teamsLeft /= 2;
+      rounds += teamsLeft;
+      modOfTeams = teamsLeft % 2;
+  }
+    if (teamsLeft === 1) {
+      return map.push(rounds);
+    }else{
+      return map.push(Math.floor
+      (rounds + roundTwo(teamsLeft)));
+    }
+    }
+    
+    function roundTwo(teams){
+      return fact(+teams)/
+      (fact(2)*fact(+teams - 2));
+    }
 
-              function roundOne(teams){
-                let rounds = 0;
-                let modOfTeams = +teams % 2;
-                let teamsLeft = +teams;
-                while(modOfTeams === 0 && teamsLeft > 1){
-                    teamsLeft /= 2;
-                    rounds += teamsLeft;
-                    modOfTeams = teamsLeft % 2;
-                }
-                      
-                if (teamsLeft === 1) {
-                  return rounds;
-                }else{
-                  return Math.floor(rounds + roundTwo(teamsLeft));
-                }
-               }
-              
-              function roundTwo(teams){
-                return fact(+teams)/(fact(2)*fact(+teams - 2));
-              }
-              
-              function fact(n){
-                let result = 1;
-                for(var i = 1; i <= n; i++){
-                    result = result*i;
-                  }
-                  return result;
-              }
-              
-              for (let i = 1; i <= 8000; i++) {
-                roundOne(i);
-              }
-                
-              } 
-          </code>
-        </pre>
+    function fact(n){
+    let result = 1;
+    for(var i = 1; i <= n; i++){
+        result = result*i;
+    }
+    return Math.floor(result);
+    }  
+
+    for (let i = 1; i <= 8000; i++) {
+      roundOne(i);
+}</code></pre>
+          </details>        
       </section>
-    </div>
-    
-    
-      <aside class="right-card">
-        <header class="top-right">
-          <img src="./images/Portrait.jpg" alt="Photo" width="204" height="204" class="face">
-          <h1>Nagaev Roman</h1>
-        </header>
-        <main>
+    </main>
+      <aside>
+        <div class="content">
           <section class="contacts">
             <h3>Contacts</h3>
             <ul>
               <li>
                 <img src="./icons/phone.svg" alt="Phone Icon" width="30" height="30">
-                <p>+375 (33) 336-57-98</p>
+                <a href="tel:+375333365798">+375(33)336-57-98</a>
               </li>
               <li>
-                <img src="./icons/email.svg" alt="Email Icon" width="30" height="30">
-                <p>nahagaevroman@gmail.com</p>
+                <img src="./icons/mail.svg" alt="Email Icon" width="30" height="30">
+                <a target="_blank" href="mailto:nahagaevroman@gmail.com">Mail</a>
               </li>
               <li>
                 <img src="./icons/telegram.svg" alt="Telegram Icon" width="30" height="30">
-                <p>@NagaevRoman</p>
+                <a target="_blank" href="//t.me/NagaevRoman">Telegram</a>
               </li>
-               <li>
-                <img src="" alt="LinkedIn Icon" width="30" height="30">
-                <a href="">LinkedIn</a>
+              <li>
+                <img src="./icons/vkontakte.svg" alt="Discord Icon" width="30" height="30">
+                <a target="_blank" href="//vk.com/id52721304">VK</a>
+              </li>
+              <li>
+                <img src="./icons/Tlinkedin.svg" alt="LinkedIn Icon" width="30" height="30">
+                <a  target="_blank" href="//www.linkedin.com/in/roman-nagaev-16a583221/">LinkedIn</a>
               </li>
             </ul>
           </section>
@@ -125,7 +126,7 @@
             <ul>
               <li>
                 <p class="language-name">English</p>
-                <p>Upper-intermediate</p>
+                <p>Pre-intermediate</p>
               </li>
               <li>
                 <p class="language-name">Russian</p>
@@ -133,18 +134,22 @@
               </li>
             </ul>
           </section>
-        </main>
+        </div>
       </aside>
       </div>
     <footer>
-      <a class="my-github" href="https://github.com/NagaevRoman">
+      <a target="_blank" class="my-github" href="//github.com/NagaevRoman">
         <img class="github-icon" src="./icons/github.svg" alt="Github Icon" width="26" height="26">
         <p>My GitHub</p>
       </a>
-      <p>© 2021</p>
-      <a href="https://rs.school/js/">
-        <img src="./icons/rsschool.svg" alt="Rsschool Icon" width="73" height="26">
+      <a target="_blank" class="my-youtube" href="//youtube.com/channel/UCroXe9axCKSGQKcwfhXVVVQ">
+        <img class="youtube-icon" src="./icons/youtube.svg" alt="Github Icon" width="26" height="26">
+        <p>My Youtube</p>
       </a>
+      <a target="_blank" href="//rs.school/js/">
+        <img src="./icons/logo-rsschool3.png" alt="Rsschool Icon" width="73" height="26">
+      </a>
+      <p>© 2021</p>
     </footer>
   </div>
 </body>
